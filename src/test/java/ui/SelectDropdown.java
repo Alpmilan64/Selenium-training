@@ -40,6 +40,7 @@ public class SelectDropdown {
 		
 		  WebElement  ddown = driver.findElement(By.xpath("//*[@id='searchDropdownBox']"));
 		  Select select = new Select(ddown);
+		  Thread.sleep(3000);
 		 
 		  
 		  // now we can call the select methods
