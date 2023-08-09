@@ -26,6 +26,8 @@ public class AmazonShopping {
 		   driver.findElement(By.xpath("//*[@id='nav-search-submit-button']")).click();
 		    driver.manage().window().maximize();
 		    driver.findElement(By.linkText("womens tunic tops")).click();
+		    
+		    
 		 //   Thread.sleep(5000);
 		  //  driver.findElement(By.xpath("//*[@id=['celwidget nav-sprite-v1']")).sendKeys("scroll_down");
 		   
