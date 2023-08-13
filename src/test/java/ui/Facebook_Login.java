@@ -11,9 +11,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Facebook_Login {
 
 
-	
-
-        public static String browser = "Edge";
+         public static String browser = "Chrome";
+       // public static String browser = "Edge";
+       // public static String browser ="Firefox";
         
         public static WebDriver driver;
 
@@ -36,7 +36,8 @@ if (browser.equals("Edge")) {
 	driver = new FirefoxDriver();						
 }
 
-    driver.get("http://www.Facebook.com/");
+    //.get("http://www.Facebook.com/");
+    driver.navigate().to("http://www.facebook.com");
     
  driver.findElement(By.xpath("//*[@id='user-name']")).sendKeys("problem_user");
  driver.findElement(By.xpath("//*[@id='password']")).sendKeys("secret_sauce");
