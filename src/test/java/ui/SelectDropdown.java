@@ -43,9 +43,9 @@ public class SelectDropdown {
 		  Thread.sleep(3000);
 		 
 		  
-		  // now we can call the select methods
-		  
-	         select.selectByValue("search-alias=fashion-womens");
+		              // now we can call the select methods
+		 
+		   select.selectByValue("search-alias=fashion-womens");
 	  // select.selectByVisibleText("search-alias=fashion-womens");
 		  
 		   
