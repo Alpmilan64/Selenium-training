@@ -1,8 +1,13 @@
 package com.AlpTech_01;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -17,20 +22,28 @@ public class Amazon_Demo {
 	            	   if (browser.equals("Chrome")) {
 	            		   
 	            		   WebDriverManager.chromedriver().setup();
-	            		   WebDriver driver = new ChromeDriver();
+	            		    driver = new ChromeDriver();
 	            		   
 	            	   }else if(browser.equals("Edge")) {
 	            		   
 	            		   WebDriverManager.chromedriver().setup();
 	            		   
-	            		   WebDriver driver = new EdgeDriver();
+	            		    driver = new EdgeDriver();
 	            		   
-	            	   } else if
+	            	   } else if(browser.equals("Firefox")) {
+	            		   
+	            		   WebDriverManager.firefoxdriver().setup();
+	            		   
+	            		   driver = new FirefoxDriver();
+	            	   }
 	            	   
 	            	   
-	            	   
-	            	   
-	            	   
+	            	  driver.get("https://www.google.com/"); 
+	            	  
+	           // List<WebElement>	driver.findElements(By.tagName("#content"));
+	         //   int sizeofdriver=driver.size();
+	        //  System.out.println(sizeofdriver);
+	            	
 	            	   
 	            	   
 	            	   
@@ -40,4 +53,7 @@ public class Amazon_Demo {
 					
 				}
 
-}
+					
+				}
+
+

@@ -18,6 +18,7 @@ public class Facebook_Login {
         public static WebDriver driver;
 
 public static void main(String[] args) throws InterruptedException {
+	
 
 if (browser.equals("Edge")) {
 	
