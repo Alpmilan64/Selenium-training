@@ -21,13 +21,13 @@ public class LoginTest {
 		
 		// Next Step entering username & password
 		
-	       driver.findElement(By.id("user-name")).sendKeys("problem_user");  // --> This  will locate and send username
-	       driver.findElement(By.id("password")).sendKeys("secret_sauce"); // --> This will locate and send Password
-	       driver.findElement(By.xpath("//*[@id='login-button']")).click(); //  --> 
+   driver.findElement(By.id("user-name")).sendKeys("problem_user");  // --> This  will locate and send username
+	  driver.findElement(By.id("password")).sendKeys("secret_sauce"); // --> This will locate and send Password
+	     driver.findElement(By.xpath("//*[@id='login-button']")).click(); //  --> This will click on login button
 	       
 	      Thread.sleep(5000);
 	       
-	        driver.quit();
+	        driver.close();
 	       
 	       
 	   //  driver.findElement(By.xpath("//*[@id='login-button']")).click(); --> relative xpath
