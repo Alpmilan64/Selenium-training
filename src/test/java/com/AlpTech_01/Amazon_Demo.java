@@ -40,6 +40,8 @@ public class Amazon_Demo {
 	            	   
 	            	  driver.get("https://www.google.com/"); 
 	            	  
+	            	  driver.close();
+	            	  
 	           // List<WebElement>	driver.findElements(By.tagName("#content"));
 	         //   int sizeofdriver=driver.size();
 	        //  System.out.println(sizeofdriver);

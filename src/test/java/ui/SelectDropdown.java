@@ -46,14 +46,18 @@ public class SelectDropdown {
 		              // now we can call the select methods
 		 
 		   select.selectByValue("search-alias=fashion-womens");
+		   
 	  // select.selectByVisibleText("search-alias=fashion-womens");
 		  
 		   
-		     Thread.sleep(3000);
+		    // Thread.sleep(3000);
 		     
 		   driver.findElement(By.xpath("//*[@id='nav-search-submit-button']")).click();
+		   
+		   driver.close();
+		   
 		 // This is amazon DD select box is different. I can use <selectByValue , But  not use < selectByVisibleTex>
-		// tree mothods  < selectByValue, or VisibleText, or index. some select text boxes are different than others...
+		// three mothods  < selectByValue, or VisibleText, or index. some select text boxes are different than others...
 		
 
 

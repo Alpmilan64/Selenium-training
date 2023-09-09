@@ -23,7 +23,7 @@ public class LoginTest {
 		
    driver.findElement(By.id("user-name")).sendKeys("problem_user");  // --> This  will locate and send username
 	  driver.findElement(By.id("password")).sendKeys("secret_sauce"); // --> This will locate and send Password
-	     driver.findElement(By.xpath("//*[@id='login-button']")).click(); //  --> This will click on login button
+	       driver.findElement(By.xpath("//*[@id='login-button']")).click(); //  --> This will click on login button
 	       
 	      Thread.sleep(5000);
 	       
@@ -33,7 +33,7 @@ public class LoginTest {
 	   //  driver.findElement(By.xpath("//*[@id='login-button']")).click(); --> relative xpath
 	  //  driver.findElement(By.xpath("//*[@id'user-name']"));    ---> ?
 	  //  driver.findElement(By.xpath("//*[@id='user-name']")); -->?
-	       
+	      
 	       
 	       
 	       
